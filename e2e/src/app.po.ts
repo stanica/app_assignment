@@ -7,6 +7,10 @@ import { browser, element, by, ElementFinder } from 'protractor';
 
 export class AppPage {
   constructor() {
+    browser.driver
+      .manage()
+      .window()
+      .setSize(425, 800);
     // Forces default language
     this.navigateToPopular();
     browser.executeScript(() => localStorage.setItem('language', 'en-US'));

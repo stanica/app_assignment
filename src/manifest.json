@@ -1,0 +1,14 @@
+{
+  "name": "Moviez",
+  "short_name": "Moviez",
+  "theme_color": "#488aff",
+  "background_color": "#488aff",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/movies.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}

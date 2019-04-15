@@ -1,0 +1,29 @@
+<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
+  <div fxHide.gt-sm fxLayoutAlign="start center">
+    <mat-icon *ngIf="hasPreviousPage && page === 'details'" (click)="goBack()" class="mr-3">arrow_back</mat-icon>
+    <span class="title"><b>{{title}}</b></span>
+  </div>
+  <div fxHide.lt-md>
+    <a class="brand" href="#" translate>APP_NAME</a>
+    <button mat-button routerLink="/popular" routerLinkActive="active">
+      <mat-icon>trending_up</mat-icon>
+      <span translate>Popular Movies</span>
+    </button>
+    <button mat-button routerLink="/top" routerLinkActive="active">
+      <mat-icon>star_rate</mat-icon>
+      <span translate>Top Movies</span>
+    </button>
+  </div>
+  <span fxFlex></span>
+  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+    <mat-icon>language</mat-icon>
+  </button>
+  <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #languageMenu="matMenu">
+    <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
+        {{language}}
+      </button>
+  </mat-menu>
+</mat-toolbar>

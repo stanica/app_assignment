@@ -1,0 +1,33 @@
+.details-container {
+  padding: 20px;
+}
+
+.details-toolbar {
+  height: 80px;
+}
+
+.details-title {
+  font-weight: 100;
+  font-size: 29px;
+  white-space: normal;
+}
+
+.details-release-date {
+  font-size: 24px;
+  font-weight: 300;
+  color: #747474;
+}
+
+.details-runtime {
+  font-size: 24px;
+  font-style: oblique;
+  color: #747474;
+}
+
+.details-vote-average {
+  font-size: 16px;
+}
+
+button[md-flat-button] {
+  border-radius: 0;
+}

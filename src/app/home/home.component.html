@@ -1,0 +1,13 @@
+<app-loader [isLoading]="isLoading" size="1.5"></app-loader>
+<div class="row no-gutters movies-container" detect-scroll (onScroll)="onScroll($event)" [bottomOffset]="200">
+  <div *ngFor="let movie of movies; index as i;" class="col-6 col-sm-4 col-md-3 col-lg-2">
+    <a [routerLink]="'/details/' + movie.id">
+      <img
+        class="movie-poster"
+        [src]="'http://image.tmdb.org/t/p/w185/' + movie.poster_path"
+        [srcset]="'http://image.tmdb.org/t/p/w342/' + movie.poster_path + ' 342w, ' + 'http://image.tmdb.org/t/p/w500/' + movie.poster_path + ' 500w, '"
+        [id]="'image-' + i"
+        />
+    </a>
+  </div>
+</div>

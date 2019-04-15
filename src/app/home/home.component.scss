@@ -1,0 +1,10 @@
+.movies-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.movies-container::-webkit-scrollbar {
+  display: none;
+}

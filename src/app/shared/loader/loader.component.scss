@@ -1,0 +1,17 @@
+.loader-container {
+  background: transparent;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mat-progress-spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message {
+  margin-left: 0.5em;
+}
